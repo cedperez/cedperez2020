@@ -39,7 +39,7 @@ tabItems.forEach(item => item.addEventListener('click', selectItem));
 
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "CEDRIC PEREZ", "I am Creative.", "I love Design.", "I love Solving Problems."];
+  var dataText = [ "CEDRIC PEREZ", "I am Creative.", "I love Design."];
   
   // type one text in the typwriter
   // keeps calling itself until the text is finished
