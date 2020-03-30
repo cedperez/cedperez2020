@@ -3,12 +3,12 @@ AOS.init();
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 'auto',
       spaceBetween: 40,
-      centeredSlides: true,
+      // centeredSlides: false,
       grabCursor: true,
       loop: true,
       pagination: {
         el: '.swiper-pagination',
-        clickable: true,
+        clickable: false,
       },
     });
   

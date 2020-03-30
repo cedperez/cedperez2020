@@ -11,7 +11,9 @@
 }
 
 // *** NAVBAR ***
-
+.navbar {
+    border-bottom: 1px solid #cccccc;
+}
 .navbar-brand img {
     width: auto;
     max-width: 40px;
@@ -55,7 +57,7 @@
         border-radius: 60px;
         position: relative;
         margin: 0 auto;
-        margin-top: -6.5rem;
+        margin-top: -10rem;
         &:before {            
             content: "";
             width: 5px;
@@ -67,6 +69,26 @@
             transform: translate(-50%);
             border-radius: 60%;            
             animation: mouse 2s infinite;
+        }
+    }
+    .social {
+        position: absolute;
+        left: 25px;
+        bottom: 30px;
+        &__icons {
+            list-style: none;
+            li a {
+                font-size: 1.5rem;
+                color: #495057;
+            }
+        }
+        &:before {
+            content: "";
+            height: 180px;
+            width: 4px;
+            background-color: #495057;
+            position: absolute;
+            bottom: 110%;
         }
     }
 }
@@ -95,6 +117,15 @@
 }
 
 // *** PORTFOLIO ***
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    .grid-item {
+        height: 450px;
+        background-size: cover;
+        background-position: center;
+    }
+}
 .portfolio {
     img {
         width: 100%;

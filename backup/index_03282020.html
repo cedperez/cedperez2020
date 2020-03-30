@@ -38,48 +38,35 @@
 
 </head>
 <body>
+    <!-- ================================================== NAVBAR ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/assets/images/cedricperez-logo.png" alt="">CEDPEREZ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- ================================================== WELCOME ================================================== -->
     <header class="masthead">
-        <!-- ================================================== NAVBAR ================================================== -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="/assets/images/cedricperez-logo.png" alt="">CEDPEREZ</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="social">
-            <ul class="social__icons">
-                <li>
-                    <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-                </li>
-            </ul>
-        </div>
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
@@ -95,25 +82,37 @@
         </div>
         <div class="mouse"></div> 
     </header>
-    <section class="about">
-        
-    </section>
-    <section id="portfolio">
-        <div class="grid-container">
-            <div class="grid-item" style="background-image: url('assets/images/make-it-happen.jpg');">
-               <div class="grid-item_content"></div>
+
+    <section id="porfolio"  class="py-5">
+        <div class="container">
+            <div class="section-title pb-4">
+                <h3>Graphic Design</h3>
             </div>
-            <div class="grid-item" style="background-image: url('assets/images/lincoln-navigator.jpg');">
-                <div class="grid-item_content"></div>
-             </div>
-             <div class="grid-item" style="background-image: url('assets/images/mazda-coupon.jpg');">
-                <div class="grid-item_content"></div>
-             </div>
-             <div class="grid-item" style="background-image: url('assets/images/make-it-happen.jpg');">
-                <div class="grid-item_content"></div>
-             </div>
-            
-            
+        </div>
+        <!-- *** Card carousel reference: https://www.youtube.com/watch?v=9yLxmbICrTM -->
+        <div class="row">
+            <div class="col-5"></div>
+            <div class="col-7">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/portfolio-mobile-app-ui-tesla.jpg" alt="Mobile App UI" class="rounded mb-3">
+                            <div class="info text-light p-2">
+                                <h5>Tesla Roadster</h5>
+                                
+                                <a href="http://" target="_blank" rel="noopener noreferrer">Download PSD</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><div class="swiper-slide-content" style="background: url('assets/images/portfolio-gateway-toyota-mailout.jpg');"></div></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio-lambton-lincoln.jpg" alt="Mobile App UI" class="rounded mb-3"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio-mazda-coupon" alt="Mobile App UI" class="rounded mb-3"></div>
+                        <div class="swiper-slide"><div class="swiper-slide-content" style="background: url('assets/images/make-it-happen.jpg');"></div></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio-wjphotography.jpg" alt="Mobile App UI" class="rounded mb-3"></div>
+                        <div class="swiper-slide"><img src="assets/images/portfolio-mobile-ui-music-player" alt="Mobile App UI" class="rounded mb-3"></div>                
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
     </section>
 

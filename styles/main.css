@@ -124,6 +124,10 @@ a.btn-primary-soft {
   font-family: 'Oxygen', sans-serif;
 }
 
+.navbar {
+  border-bottom: 1px solid #cccccc;
+}
+
 .navbar-brand img {
   width: auto;
   max-width: 40px;
@@ -173,7 +177,7 @@ a.btn-primary-soft {
   border-radius: 60px;
   position: relative;
   margin: 0 auto;
-  margin-top: -6.5rem;
+  margin-top: -10rem;
 }
 
 .masthead .mouse:before {
@@ -189,6 +193,30 @@ a.btn-primary-soft {
   border-radius: 60%;
   -webkit-animation: mouse 2s infinite;
           animation: mouse 2s infinite;
+}
+
+.masthead .social {
+  position: absolute;
+  left: 25px;
+  bottom: 30px;
+}
+
+.masthead .social__icons {
+  list-style: none;
+}
+
+.masthead .social__icons li a {
+  font-size: 1.5rem;
+  color: #495057;
+}
+
+.masthead .social:before {
+  content: "";
+  height: 180px;
+  width: 4px;
+  background-color: #495057;
+  position: absolute;
+  bottom: 110%;
 }
 
 @-webkit-keyframes mouse {
@@ -233,6 +261,19 @@ a.btn-primary-soft {
 
 .features h5 {
   color: #1d4d9c;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.grid-container .grid-item {
+  height: 450px;
+  background-size: cover;
+  background-position: center;
 }
 
 .portfolio img {
